@@ -12,8 +12,7 @@ duplicate_rows = data.duplicated()
 # Loại bỏ dữ liệu lặp
 data_cleaned = data.drop_duplicates()
 
-# Assuming the target variable is named 'Diabetes_012' in your dataset
-# and all other columns are features
+
 #data = data.drop(columns=['Income'])
 X = data_cleaned.drop('Diabetes_binary', axis=1)
 y = data_cleaned['Diabetes_binary']
