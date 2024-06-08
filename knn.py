@@ -8,9 +8,8 @@ file_path = 'dataset_new.csv'
 data = pd.read_csv(file_path)
 
 
-# Assuming the target variable is named 'Diabetes_012' in your dataset
-# and all other columns are features
-data = data.drop(columns=['Income'])
+
+#data = data.drop(columns=['Income'])
 duplicate_rows = data.duplicated()
 
 # Loại bỏ dữ liệu lặp
